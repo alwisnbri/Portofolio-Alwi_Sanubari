@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio-Alwi Sanubari</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Smooth hover scale for cards */
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+    /* Button hover effect */
+    .btn {
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow">
+    <div class="container mx-auto px-6 py-6 flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-bold">ALWI SANUBARI - PORTOFOLIO</h1>
+        <p class="text-sm opacity-90">S.Kom — Sarjana Komputer</p>
+      </div>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#about" class="hover:text-gray-200">About</a>
+        <a href="#projects" class="hover:text-gray-200">Projects</a>
+        <a href="#skills" class="hover:text-gray-200">Skills</a>
+        <a href="#contact" class="hover:text-gray-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 py-12">
+
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold mb-4 text-gray-800">Hi, saya Alwi Sanubari 👋</h2>
+        <p class="text-gray-600 mb-6 max-w-xl leading-relaxed">
+          Lulusan S1 Teknik Informatika dengan fokus pada pengembangan keahlian teknis dan interpersonal. 
+          Pengalaman kerja di Kejaksaan Negeri Kota Gorontalo (Bagian Pidana Khusus) memperkuat kemampuan 
+          dalam manajemen data digital. Melalui program MBKM, saya mengasah komunikasi & kolaborasi tim. 
+          Individu cepat belajar, menyukai tantangan, dan siap berkontribusi maksimal.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#projects" class="btn px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:opacity-95">Lihat Proyek</a>
+          <a href="#contact" class="btn px-4 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50">Hubungi Saya</a>
+          <a href="https://drive.google.com/file/d/18rlbR36IjXe-YsS5O6K17bBDDJ2KYWMB/view?usp=sharing" target="_blank" class="btn px-4 py-2 text-sm text-gray-700 border rounded-lg hover:bg-gray-100">Unduh CV</a>
+        </div>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <div class="w-56 h-56 rounded-xl overflow-hidden shadow-lg border-4 border-white">
+          <img src="alwi.jpeg" alt="Foto Profil Alwi Sanubari" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-12 bg-white rounded-xl shadow p-6 card">
+      <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Tentang Saya</h3>
+      <p class="text-gray-700 leading-relaxed">
+        Lulusan S1 Teknik Informatika dengan fokus pada pengembangan keahlian teknis dan interpersonal. 
+        Pengalaman kerja di Kejaksaan Negeri Kota Gorontalo (Bagian Pidana Khusus) memperkuat kemampuan 
+        dalam manajemen data digital. Program MBKM melatih komunikasi & kolaborasi tim. 
+        Siap menghadapi tantangan baru untuk memberikan kontribusi terbaik.
+      </p>
+      <div class="mt-4 grid sm:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-medium text-indigo-600">Pendidikan</h4>
+          <p class="text-sm text-gray-600">S1 Sarjana Komputer — Universitas Ichsan Gorontalo (2021 - 2025)<br>IPK 3.97/4.00</p>
+        </div>
+        <div>
+          <h4 class="font-medium text-indigo-600">Judul Skripsi</h4>
+          <p class="text-sm text-gray-600">Penerapan Metode ANN Untuk Prediksi Penderita Penyakit Jantung</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mt-12">
+      <h3 class="text-2xl font-semibold mb-6 text-indigo-600">Proyek</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Card project -->
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col card">
+          <h4 class="font-semibold text-lg text-indigo-700">Sistem Prediksi Penyakit Jantung</h4>
+          <p class="text-sm text-gray-600 my-3 leading-relaxed">
+            Platform digital untuk memprediksi risiko penyakit jantung berbasis AI & Machine Learning. 
+            Memberikan gambaran awal dari faktor risiko pengguna.
+          </p>
+          <div class="mt-auto flex items-center justify-between">
+            <div class="text-xs text-gray-500">Google CoLab • Gradio</div>
+            <a href="https://drive.google.com/drive/folders/17e5fP0OcY-ZM6j9emB2z5rB29AqgVDtk?usp=sharing" target="_blank" class="text-indigo-600 text-sm font-medium hover:underline">Lihat</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col card">
+          <h4 class="font-semibold text-lg text-indigo-700">Aplikasi Prediksi Mahasiswa Registrasi</h4>
+          <p class="text-sm text-gray-600 my-3 leading-relaxed">
+            Aplikasi berbasis data untuk memprediksi jumlah mahasiswa registrasi baru, membantu universitas 
+            dalam pengambilan keputusan strategis.
+          </p>
+          <div class="mt-auto flex items-center justify-between">
+            <div class="text-xs text-gray-500">Visual Studio</div>
+            <a href="https://drive.google.com/drive/folders/1EHOIFjUZlINChEaszlRwS-lLVfWTEURN?usp=sharing" target="_blank" class="text-indigo-600 text-sm font-medium hover:underline">Lihat</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col card">
+          <h4 class="font-semibold text-lg text-indigo-700">Website Paradise Gorontalo</h4>
+          <p class="text-sm text-gray-600 my-3 leading-relaxed">
+            Platform pemesanan paket wisata Gorontalo yang menghubungkan wisatawan dengan destinasi & layanan 
+            lokal untuk pengalaman wisata terbaik.
+          </p>
+          <div class="mt-auto flex items-center justify-between">
+            <div class="text-xs text-gray-500">Visual Studio Code</div>
+            <a href="https://drive.google.com/drive/folders/1wMdh7WhvVm-1lsT4EjI_toDXFKUsLIyb?usp=sharing" target="_blank" class="text-indigo-600 text-sm font-medium hover:underline">Lihat</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Certification -->
+    <section id="certification" class="mt-12 bg-white rounded-xl shadow p-6 card">
+      <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Sertifikasi</h3>
+
+      <div class="mb-8">
+        <h4 class="font-semibold text-lg">Trust Training Partners Microsoft Office</h4>
+        <p class="text-sm text-gray-600 mt-2 mb-4 leading-relaxed">
+          Sertifikasi resmi Microsoft Office (2023) membuktikan keahlian dalam penggunaan Word, Excel, dan 
+          PowerPoint secara profesional.
+        </p>
+        <img src="office.jpeg" alt="Sertifikat Microsoft Office" class="w-full max-w-md rounded-lg shadow-md border" />
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-lg">BNSP Junior Web Developer</h4>
+        <p class="text-sm text-gray-600 mt-2 mb-4 leading-relaxed">
+          Sertifikasi kompetensi BNSP bidang Junior Web Developer (2025) mencakup keterampilan 
+          merancang, membangun, dan menguji aplikasi web dasar.
+        </p>
+        <img src="kompetensi.jpeg" alt="Sertifikat BNSP" class="w-full max-w-md rounded-lg shadow-md border" />
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mt-12 bg-white rounded-xl shadow p-6 card">
+      <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Keahlian</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div>
+          <h5 class="font-medium text-indigo-700">Sistem Operasi</h5>
+          <p class="text-sm text-gray-600">Microsoft Windows</p>
+        </div>
+        <div>
+          <h5 class="font-medium text-indigo-700">Microsoft Office</h5>
+          <p class="text-sm text-gray-600">Word, Excel (Pivot, VLOOKUP, IF, Charting), PowerPoint profesional.</p>
+        </div>
+        <div>
+          <h5 class="font-medium text-indigo-700">Kemampuan Personal</h5>
+          <p class="text-sm text-gray-600">Teliti, Rapi, Bertanggung Jawab, Kerja Tim, Komunikasi, Manajemen Waktu.</p>
+        </div>
+        <div>
+          <h5 class="font-medium text-indigo-700">Bahasa</h5>
+          <p class="text-sm text-gray-600">Indonesia (Fasih), Inggris (Menengah)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+<!-- Contact -->
+<section id="contact" class="mt-12 bg-white rounded-xl shadow p-6 card">
+    <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Kontak</h3>
+  
+    <div class="space-y-4 mb-6">
+      <!-- Email -->
+      <div class="flex items-center gap-3">
+        <!-- Icon Email -->
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-5 h-5 text-indigo-600" 
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M16 12H8m8-4H8m-2 8h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        </svg>
+        <a href="mailto:alwisanubaris1informatika2021@gmail.com" 
+           class="font-medium text-indigo-600 hover:underline">
+           alwisanubaris1informatika2021@gmail.com
+        </a>
+      </div>
+  
+      <!-- LinkedIn -->
+      <div class="flex items-center gap-3">
+        <!-- Icon LinkedIn -->
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-5 h-5 text-indigo-600" 
+             viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14c-2.77 0-5 2.23-5 
+                   5v14c0 2.77 2.23 5 5 5h14c2.77 
+                   0 5-2.23 5-5v-14c0-2.77-2.23-5-5-5zm-11 
+                   20h-3v-11h3v11zm-1.5-12.268c-.966 
+                   0-1.75-.804-1.75-1.732s.784-1.732 
+                   1.75-1.732 1.75.804 
+                   1.75 1.732-.784 1.732-1.75 1.732zm13.5 
+                   12.268h-3v-5.604c0-1.337-.027-3.063-1.865-3.063-1.865 
+                   0-2.151 1.456-2.151 2.963v5.704h-3v-11h2.881v1.507h.041c.401-.758 
+                   1.379-1.557 2.838-1.557 3.035 0 3.599 
+                   2.001 3.599 4.604v6.446z"/>
+        </svg>
+        <a href="https://www.linkedin.com/in/alwisanubari" target="_blank" 
+           class="font-medium text-indigo-600 hover:underline">
+           linkedin.com/in/alwi-sanubari
+        </a>
+      </div>
+  
+      <!-- GitHub -->
+      <div class="flex items-center gap-3">
+        <!-- Icon GitHub -->
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-5 h-5 text-indigo-600" 
+             viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" clip-rule="evenodd" 
+                d="M12 2C6.48 2 2 6.58 2 12.22c0 4.48 2.87 8.28 
+                   6.84 9.63.5.1.68-.22.68-.48 
+                   0-.24-.01-.87-.01-1.71-2.78.61-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 
+                   1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 
+                   2.91.84.09-.66.35-1.1.64-1.35-2.22-.26-4.55-1.14-4.55-5.05 
+                   0-1.11.39-2.01 1.03-2.72-.1-.26-.45-1.3.1-2.7 
+                   0 0 .84-.27 2.75 1.03A9.38 9.38 0 0112 
+                   6.8c.85.01 1.71.12 2.51.35 1.9-1.3 2.74-1.03 
+                   2.74-1.03.55 1.4.2 2.44.1 2.7.64.71 
+                   1.03 1.61 1.03 2.72 0 3.92-2.34 4.79-4.57 
+                   5.05.36.32.68.95.68 1.91 0 1.38-.01 2.49-.01 
+                   2.83 0 .26.18.59.69.48A10.22 10.22 0 0022 
+                   12.22C22 6.58 17.52 2 12 2z"/>
+        </svg>
+        <a href="https://github.com/alwisanubari" target="_blank" 
+           class="font-medium text-indigo-600 hover:underline">
+           github.com/alwisnbri
+        </a>
+      </div>
+    </div>
+  
+    <!-- Form -->
+    <form class="grid sm:grid-cols-2 gap-4">
+      <input class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" placeholder="Nama" />
+      <input class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" placeholder="Email" />
+      <textarea class="p-3 border rounded-lg sm:col-span-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" placeholder="Pesan" rows="4"></textarea>
+      <button type="button" class="sm:col-span-2 px-4 py-3 bg-indigo-600 text-white rounded-lg btn">Kirim Pesan</button>
+    </form>
+  </section>  
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-sm text-gray-500">
+      © 2025 Alwi Sanubari. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
